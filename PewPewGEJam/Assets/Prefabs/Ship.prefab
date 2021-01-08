@@ -94,7 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5252795232568631532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbfa233839f263f4993cc3aa527fc17e, type: 3}
+  m_Script: {fileID: 11500000, guid: 13c980b3c6f8c484fb37a7b999534879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
@@ -104,7 +104,7 @@ MonoBehaviour:
   _muzzleTransform: {fileID: 1815122693388132799}
   _topLeftPosOfPlayerZone: {fileID: 0}
   _topLeftPosOfCloneZone: {fileID: 0}
-  _playZoneSize: {x: 7, y: 9}
+  _playZoneSize: {x: 9, y: 10}
 --- !u!58 &2931007457300831901
 CircleCollider2D:
   m_ObjectHideFlags: 0

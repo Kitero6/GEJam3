@@ -115,8 +115,9 @@ public class ShipController : MonoBehaviour
         // Get the sprite renderer
         SpriteRenderer spr = GetComponent<SpriteRenderer>();
 
+		//ToDo add sprites
         // Update the sprite
-        spr.sprite = TypeManager.Instance.GetPlayerSprite(_currentType);
+        //spr.sprite = TypeManager.Instance.GetPlayerSprite(_currentType);
 
         // Also update the clone
         _clone?.UpdateColor();

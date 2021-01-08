@@ -40,16 +40,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7302100267547403288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3e4abbbd7f46d94287ca2a540ed5b42, type: 3}
+  m_Script: {fileID: 11500000, guid: cb3646b36b4847a42865c6859d2f6820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSprite:
   - type: 0
-    value: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    value: {fileID: 0}
   - type: 1
-    value: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    value: {fileID: 0}
   PlayerShoot:
   - type: 0
-    value: {fileID: 1282954049250796072, guid: 53f64660623e9ec47b6fa25579d2ecfe, type: 3}
+    value: {fileID: 1282954049250796072, guid: adfd840a627aaeb4c81f12b95446a6c9, type: 3}
   - type: 1
-    value: {fileID: 575458900964820099, guid: 206f82ea76458a847b36bf4bb5051f07, type: 3}
+    value: {fileID: 575458900964820099, guid: c2b7a2747d299e240bd42adfd76eb531, type: 3}
