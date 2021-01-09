@@ -104,7 +104,7 @@ MonoBehaviour:
   _muzzleTransform: {fileID: 1815122693388132799}
   _topLeftPosOfPlayerZone: {fileID: 0}
   _topLeftPosOfCloneZone: {fileID: 0}
-  _playZoneSize: {x: 9, y: 10}
+  _playZoneSize: {x: 16.78, y: 20}
   _cloneMaterial: {fileID: 2100000, guid: 3fcd08aa7cf6b1144a9adf8a533cb320, type: 2}
 --- !u!58 &2931007457300831901
 CircleCollider2D:
