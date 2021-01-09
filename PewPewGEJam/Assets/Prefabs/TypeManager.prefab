@@ -48,8 +48,13 @@ MonoBehaviour:
     value: {fileID: 0}
   - type: 1
     value: {fileID: 0}
+  PlayerColor:
+  - type: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+  - type: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
   PlayerShoot:
   - type: 0
-    value: {fileID: 1282954049250796072, guid: adfd840a627aaeb4c81f12b95446a6c9, type: 3}
+    value: {fileID: 4742300209500403356, guid: adfd840a627aaeb4c81f12b95446a6c9, type: 3}
   - type: 1
     value: {fileID: 575458900964820099, guid: c2b7a2747d299e240bd42adfd76eb531, type: 3}

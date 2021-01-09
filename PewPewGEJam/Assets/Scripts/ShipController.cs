@@ -12,6 +12,7 @@ public class ShipController : MonoBehaviour
     public Transform _topLeftPosOfPlayerZone = null;
     public Transform _topLeftPosOfCloneZone = null;
     public Vector2 _playZoneSize = Vector2.zero;
+	public Material _cloneMaterial;
 
     Vector2 _position = Vector2.zero;
     float _shootCooldown = 0f;
@@ -33,6 +34,9 @@ public class ShipController : MonoBehaviour
             _clone.CurrentType = ETypeShoot.B;
 
             _clone.UpdateColor();
+
+			//Change the clone color to be black for the white background
+			if ( _cloneMaterial != null ) _clone.GetComponent<SpriteRenderer>().material = _cloneMaterial;
         }
 
         _position = new Vector2(_playZoneSize.x / 2.0f, -_playZoneSize.y / 2.0f);
@@ -57,7 +61,7 @@ public class ShipController : MonoBehaviour
         // Update our ship
         Vector2 frameMove = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
-        _position += frameMove * Time.fixedDeltaTime * _speed;
+        _position += frameMove * Time.deltaTime * _speed;
 
         // Clamp the position of the player to the playzone
         _position.x = Mathf.Clamp(_position.x, 0.0f, _playZoneSize.x);

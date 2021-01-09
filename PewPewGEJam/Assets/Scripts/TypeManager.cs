@@ -11,6 +11,12 @@ public class TypeManager : MonoBehaviour
         public Sprite value;
     }
 
+	/*[System.Serializable]
+	public class PlayerColorEntry {
+		public ETypeShoot type;
+		public Color value;
+	}*/
+
     [System.Serializable]
     public class PlayerShootEntry
     {
@@ -21,6 +27,7 @@ public class TypeManager : MonoBehaviour
     public static TypeManager Instance = null;
 
     [SerializeField] PlayerSpriteEntry[] PlayerSprite = null;
+	//[SerializeField] PlayerColorEntry[] PlayerColor = null; //Added to support color
     [SerializeField] PlayerShootEntry[] PlayerShoot = null;
 
     void Start()
@@ -44,6 +51,17 @@ public class TypeManager : MonoBehaviour
 
         return null;
     }
+
+	/*
+	public Color GetPlayerColor(ETypeShoot t) {
+		foreach (PlayerColorEntry e in PlayerColor) {
+			if (e.type == t) {
+				return e.value;
+			}
+		}
+		//return a rendering error color.  Null can't be used because color is a struct.  Or something...
+		return Color.magenta;
+	}*/
 
     public GameObject GetPlayerShoot(ETypeShoot t)
     {
