@@ -132,7 +132,7 @@ public class ShipController : MonoBehaviour
         _shootCooldown -= Time.deltaTime;
         if (_shootCooldown <= 0f && Input.GetAxisRaw("Shoot") > 0f)
         {
-            GameObject go = Instantiate(TypeManager.Instance.GetPlayerShoot(_currentType), _muzzleTransform.position, _muzzleTransform.rotation);
+            GameObject go = Instantiate(TypeManager.Instance.GetPlayerShoot(_currentType, _isClone), _muzzleTransform.position, _muzzleTransform.rotation);
             Destroy(go, 2.0f);
 
             _shootCooldown = _shootTimer;
@@ -146,7 +146,7 @@ public class ShipController : MonoBehaviour
 			if ( _currentType == ETypeShoot.A )
 				cType = ETypeShoot.B;
 
-			GameObject go = Instantiate(TypeManager.Instance.GetPlayerShoot(cType), _muzzleTransform.position, _muzzleTransform.rotation);
+			GameObject go = Instantiate(TypeManager.Instance.GetPlayerShoot(cType, _isClone), _muzzleTransform.position, _muzzleTransform.rotation);
 			Destroy( go, 2.0f );
 
 			_shootCooldown = _shootTimer;

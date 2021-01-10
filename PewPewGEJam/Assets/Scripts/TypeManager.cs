@@ -22,6 +22,7 @@ public class TypeManager : MonoBehaviour
     {
         public ETypeShoot type;
         public GameObject value;
+		public GameObject value2;
     }
 
     public static TypeManager Instance = null;
@@ -63,13 +64,15 @@ public class TypeManager : MonoBehaviour
 		return Color.magenta;
 	}*/
 
-    public GameObject GetPlayerShoot(ETypeShoot t)
+    public GameObject GetPlayerShoot(ETypeShoot t, bool varient)
     {
         foreach (PlayerShootEntry e in PlayerShoot)
         {
             if (e.type == t)
             {
-                return e.value;
+
+				if ( !varient ) return e.value;
+				else return e.value2;
             }
         }
 
