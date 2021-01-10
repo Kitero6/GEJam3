@@ -9,13 +9,16 @@ public class Meteor : MonoBehaviour
     public ETypeShoot _type = 0f;
     float _speed = 0f;
 
+    void Start()
+    {
+        _speed = Random.Range(_minSpeed, _maxSpeed);
+    }
+
     // Update is called once per frame
     void Update()
     {
         Vector3 newPos = transform.position + Vector3.down * Time.deltaTime * _speed;
         transform.position = newPos;
-
-        _speed = Random.Range(_minSpeed, _maxSpeed);
     }
 
     void OnTriggerEnter2D(Collider2D other)

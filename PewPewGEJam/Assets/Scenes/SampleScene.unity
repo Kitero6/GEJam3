@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -283,80 +283,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &387182581
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7809894364517227848, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_Name
-      value: MeteorA
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227850, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.9084454
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.739466
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227851, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fc77693a9cdecad4d9e763328d902241, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,75 +495,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8311bb29ec62161418e06b79852476db, type: 3}
---- !u!1001 &763125050
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2358606412276604402, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_Name
-      value: MeteorB
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.232649
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.9310365
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358606412276604407, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3ed337a81bbe2364a8f44f37e3fd2ac8, type: 3}
 --- !u!1 &781119970
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +778,7 @@ Transform:
   - {fileID: 123830718}
   - {fileID: 781119971}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2076724829
 GameObject:
@@ -998,7 +855,7 @@ PrefabInstance:
     - target: {fileID: 3040916393157021001, guid: 76aed1a126aaa1648b716e296ebfeae2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3040916393157021001, guid: 76aed1a126aaa1648b716e296ebfeae2,
         type: 3}
@@ -1017,6 +874,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
         type: 3}
+      propertyPath: _meteorAPrefabs.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorBPrefabs.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
       propertyPath: _topLeftPosOfPlayerZone
       value: 
       objectReference: {fileID: 2076724830}
@@ -1025,6 +892,78 @@ PrefabInstance:
       propertyPath: _topLeftPosOfCloneZone
       value: 
       objectReference: {fileID: 1375217340}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorAPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8998979598434660696, guid: d63c9d20c4e09ad44b2189bc9c0c1213,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorAPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 3677988066180178849, guid: 985bbcb2ebfcc0846a4274982419fd8e,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorAPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 4400177607617266280, guid: 19279afa6d52fa4428f601159bce4a0e,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorAPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 7160742915430820673, guid: 3bdd722dd1b9b4e49b9444d2c1ef0c0b,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorAPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 386660686280399144, guid: a30327a453b27984ba0958c35988e1c3,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorAPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 7809894364517227848, guid: fc77693a9cdecad4d9e763328d902241,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorBPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1495529851606622230, guid: eefcc67a42474a844957f2ca2725b001,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorBPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 3782295171506902445, guid: 371e8752692de084aa67869fffb8d369,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorBPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 770319199299187917, guid: e95678bca51382847ae2e198e5e2654b,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorBPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 2985373283607770702, guid: c5643cd05e76c604aa383f906ef088b3,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorBPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 540997141854406726, guid: 9dee4cae205ed704193cc7de28df2f24,
+        type: 3}
+    - target: {fileID: 3040916393157021002, guid: 76aed1a126aaa1648b716e296ebfeae2,
+        type: 3}
+      propertyPath: _meteorBPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 855866212884033745, guid: 985a12655193d3a41b47f0a60a50a4db,
+        type: 3}
     - target: {fileID: 3040916393157021003, guid: 76aed1a126aaa1648b716e296ebfeae2,
         type: 3}
       propertyPath: m_Name
