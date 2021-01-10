@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Meteor : MonoBehaviour
 {
     public float _minSpeed;
     public float _maxSpeed = 0f;
+    public float _yToDestroy = 0f;
     public ETypeShoot _type = 0f;
     float _speed = 0f;
 
@@ -19,6 +21,11 @@ public class Meteor : MonoBehaviour
     {
         Vector3 newPos = transform.position + Vector3.down * Time.deltaTime * _speed;
         transform.position = newPos;
+
+        if (transform.position.y < _yToDestroy)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -28,15 +35,17 @@ public class Meteor : MonoBehaviour
         {
             if (shoot.Type == _type)
             {
-                Destroy(shoot.gameObject);
+                ScoreInstance.instance.score += 100;
                 Destroy(gameObject);
             }
+            
+            Destroy(shoot.gameObject);
         }
 
         ShipController ship = other.gameObject.GetComponent<ShipController>();
         if (ship != null)
         {
-            Debug.Log("You loose");
+            SceneManager.LoadScene("Title");
         }
     }
 }

@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minSpeed: 0.5
   _maxSpeed: 3
+  _yToDestroy: -16
   _type: 0
 --- !u!50 &-4456719941866771599
 Rigidbody2D:
