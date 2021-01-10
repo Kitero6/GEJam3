@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Meteor : MonoBehaviour
 {
-    public float _speed = 0f;
+    public float _minSpeed;
+    public float _maxSpeed = 0f;
     public ETypeShoot _type = 0f;
+    float _speed = 0f;
 
     // Update is called once per frame
     void Update()
     {
         Vector3 newPos = transform.position + Vector3.down * Time.deltaTime * _speed;
         transform.position = newPos;
+
+        _speed = Random.Range(_minSpeed, _maxSpeed);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -19,10 +23,8 @@ public class Meteor : MonoBehaviour
         Shoot shoot = other.gameObject.GetComponent<Shoot>();
         if (shoot != null)
         {
-            Debug.Log("yo");
             if (shoot.Type == _type)
             {
-            Debug.Log("yo2");
                 Destroy(shoot.gameObject);
                 Destroy(gameObject);
             }

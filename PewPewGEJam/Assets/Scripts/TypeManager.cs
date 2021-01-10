@@ -24,11 +24,19 @@ public class TypeManager : MonoBehaviour
         public GameObject value;
     }
 
+    [System.Serializable]
+    public class MeteorEntry
+    {
+        public ETypeShoot type;
+        public GameObject value;
+    }
+
     public static TypeManager Instance = null;
 
     [SerializeField] PlayerSpriteEntry[] PlayerSprite = null;
 	//[SerializeField] PlayerColorEntry[] PlayerColor = null; //Added to support color
     [SerializeField] PlayerShootEntry[] PlayerShoot = null;
+    [SerializeField] MeteorEntry[] Meteor = null;
 
     void Start()
     {
@@ -66,6 +74,19 @@ public class TypeManager : MonoBehaviour
     public GameObject GetPlayerShoot(ETypeShoot t)
     {
         foreach (PlayerShootEntry e in PlayerShoot)
+        {
+            if (e.type == t)
+            {
+                return e.value;
+            }
+        }
+
+        return null;
+    }
+
+    public GameObject GetMeteor(ETypeShoot t)
+    {
+        foreach (MeteorEntry e in Meteor)
         {
             if (e.type == t)
             {

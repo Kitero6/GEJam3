@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum ETypeShoot
 {
-    A, B
+    A = 0, B
 }
