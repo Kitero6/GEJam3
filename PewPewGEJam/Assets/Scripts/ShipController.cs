@@ -137,5 +137,21 @@ public class ShipController : MonoBehaviour
 
             _shootCooldown = _shootTimer;
         }
-    }
+
+		//Alt fire on mouse two.  allow the plaer to shoot the alternate color by right clicking
+		if ( _shootCooldown <= 0f && Input.GetAxisRaw( "Shoot2" ) > 0f ) {
+
+			//Get the alternate type...
+			ETypeShoot cType = ETypeShoot.A;
+			if ( _currentType == ETypeShoot.A )
+				cType = ETypeShoot.B;
+
+			GameObject go = Instantiate(TypeManager.Instance.GetPlayerShoot(cType), _muzzleTransform.position, _muzzleTransform.rotation);
+			Destroy( go, 2.0f );
+
+			_shootCooldown = _shootTimer;
+		}
+
+
+	}
 }

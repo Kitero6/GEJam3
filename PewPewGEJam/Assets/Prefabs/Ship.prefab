@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 10
   _shootTimer: 0.2
-  _switchTimer: 0.5
+  _switchTimer: 0.2
   _isCloneHorizontallyFlipped: 0
   _muzzleTransform: {fileID: 1815122693388132799}
   _topLeftPosOfPlayerZone: {fileID: 0}
