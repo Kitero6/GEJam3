@@ -12,16 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meteor Medium A
       objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227849, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: _minSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7809894364517227849, guid: fc77693a9cdecad4d9e763328d902241,
-        type: 3}
-      propertyPath: _maxSpeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7809894364517227850, guid: fc77693a9cdecad4d9e763328d902241,
         type: 3}
       propertyPath: m_Sprite

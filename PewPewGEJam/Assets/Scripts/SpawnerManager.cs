@@ -44,7 +44,7 @@ public class SpawnerManager : MonoBehaviour
             Vector3 spawnPos = new Vector3(xToSpawn + transformPlayZone.position.x, _distanceFromTopToSpawn + transformPlayZone.position.y, 0f);
 
             // Get a random rotation
-            Quaternion spawnRot = Quaternion.AngleAxis(Random.Range(0, Mathf.PI * 2f), Vector3.forward);
+            Quaternion spawnRot = Quaternion.AngleAxis(Random.Range(-Mathf.PI, Mathf.PI), Vector3.forward);
 
             // Get the right type to spawn
             GameObject meteor = null;
